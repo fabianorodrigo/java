@@ -1,7 +1,6 @@
 package br.com.seas.java8.datetime;
 
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 
 public class APITimeLocalDateTime {
     

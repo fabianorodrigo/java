@@ -9,5 +9,9 @@ public class APITimeLocalDate {
     {
         LocalDate n = LocalDate.now();
         System.out.println("Somente data agora: " + n.toString() );
+
+        
+        LocalDate ld = LocalDate.of(1979,7,16);
+        System.out.println("Ao contrário da antiga classe de data, os meses não iniciam em 0 (janeiro) mas sim em 1 (janeiro): " + ld.toString());
     }
 }
