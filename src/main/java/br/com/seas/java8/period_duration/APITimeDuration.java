@@ -1,9 +1,7 @@
 package br.com.seas.java8.period_duration;
 
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.Period;
 
 public class APITimeDuration {
     // Durações de tempo em horas, minutos, segundos
