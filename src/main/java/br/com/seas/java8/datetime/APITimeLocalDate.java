@@ -13,5 +13,8 @@ public class APITimeLocalDate {
         
         LocalDate ld = LocalDate.of(1979,7,16);
         System.out.println("Ao contrário da antiga classe de data, os meses não iniciam em 0 (janeiro) mas sim em 1 (janeiro): " + ld.toString());
+
+        LocalDate ld2 = ld.plusDays(1);
+        System.out.println("É possível adicionar dias ao um LocalDate com o método imutável plusDays: " + ld2.toString());
     }
 }
