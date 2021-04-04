@@ -1,4 +1,4 @@
-package br.com.seas.java8.period_duration;
+package br.com.seas.java8.datetime.period_duration;
 
 import java.time.Duration;
 import java.time.LocalTime;
