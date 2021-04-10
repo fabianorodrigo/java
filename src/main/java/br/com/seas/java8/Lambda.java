@@ -15,7 +15,7 @@ public class Lambda {
         list.forEach(n -> System.out.println(n));
 
         // Se for passar apenas o único parâmetro para o forEach, basta passar o objeto
-        // '::' e o método
+        // '::' e o método (Method Reference)
         IntStream.range(0, 5).filter(n -> n % 2 == 0).forEach(System.out::println);
 
         // Se tiver mais de uma instrução, tem que colocar chaves ({ e })
