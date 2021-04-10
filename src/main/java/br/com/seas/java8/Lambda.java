@@ -18,11 +18,19 @@ public class Lambda {
         // '::' e o método (Method Reference)
         IntStream.range(0, 5).filter(n -> n % 2 == 0).forEach(System.out::println);
 
+        // PARA DEBUGAR, A MELHOR OPÇÃO É COLOCAR EM BLOCO (entre chaves)
+        // outra opção é utilizar o método 'peek()' do stream
+
         // Se tiver mais de uma instrução, tem que colocar chaves ({ e })
         // '::' e o método
         IntStream.range(0, 5).filter(n -> {
             System.out.println(n);
             return n % 2 == 0;
         }).forEach(System.out::println);
+
+        // outra opção para DEBUG é utilizar o método 'peek' do stream
+        IntStream.range(0, 5).filter(n -> n % 2 == 0).peek(n -> System.out.println("passou aqui: " + n))
+                .forEach(System.out::println);
+
     }
 }
