@@ -19,12 +19,10 @@ public class Collect {
         // COLLECT É PARA SE TRABALHAR COM OBJETOS MUTÁVEIS (REDUCE IMUTÁVEIS)
 
         // o collect recebe uma função 'supplier', que retorna a instância do objeto que
-        // será utilizado para acumular;
-        // uma função 'acumuladora' que recebe dois parâmetros, o objeto que armazena os
-        // resultados (List, Set, etc)
-        // e um argumento do stream;
-        // e uma função de 'combinação' para o caso do stream está sendo executado em
-        // paralelo
+        // será utilizado para acumular; uma função 'acumuladora' que recebe dois
+        // parâmetros, o objeto que armazena os resultados (List, Set, etc) e um
+        // argumento do stream; e uma função de 'combinação' para o caso do stream
+        // esteja sendo executado em paralelo
 
         List<Integer> collect = list.stream().collect(() -> new ArrayList<Integer>(), (l, e) -> l.add(e),
                 (l1, l2) -> l1.addAll(l2));
