@@ -14,7 +14,7 @@ public class Streams {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
 
         // STREAMS.skip
-        System.out.println("Imprime elementos da lista: pula 2 primeiros");
+        System.out.println("Imprime elementos da lista: pula os 2 primeiros");
         list.stream().skip(2).forEach(n -> System.out.println(n));
 
         // STREAMS.limit
